@@ -127,11 +127,8 @@
 		B5320D84245724B50086D777 /* Toptenplus */ = {
 			isa = PBXGroup;
 			children = (
-				B5320D85245724B50086D777 /* AppDelegate.swift */,
 				B5320D87245724B50086D777 /* ViewController.swift */,
-				B5320D89245724B50086D777 /* Main.storyboard */,
-				B5320D8C245724B60086D777 /* Assets.xcassets */,
-				B5320D8E245724B70086D777 /* LaunchScreen.storyboard */,
+				B5320DB424572C6C0086D777 /* Supporting Files */,
 				B5320D91245724B70086D777 /* Info.plist */,
 			);
 			path = Toptenplus;
@@ -153,6 +150,17 @@
 				B5320DA7245724B70086D777 /* Info.plist */,
 			);
 			path = ToptenplusUITests;
+			sourceTree = "<group>";
+		};
+		B5320DB424572C6C0086D777 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5320D85245724B50086D777 /* AppDelegate.swift */,
+				B5320D89245724B50086D777 /* Main.storyboard */,
+				B5320D8C245724B60086D777 /* Assets.xcassets */,
+				B5320D8E245724B70086D777 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D2B6669B0DB8B0418E0E7879 /* Frameworks */ = {
