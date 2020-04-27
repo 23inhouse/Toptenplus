@@ -10,7 +10,7 @@ import UIKit
 
 extension AppDelegate {
   func gotoAppVC() {
-    let appViewController = ViewController()
+    let appViewController = ToptenViewController()
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.rootViewController = appViewController
     window?.makeKeyAndVisible()

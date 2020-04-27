@@ -9,26 +9,29 @@
 import XCTest
 
 class ToptenplusUITests: XCTestCase {
+  let app = XCUIApplication()
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  override func setUp() {
+    continueAfterFailure = false
+    app.launchArguments = ["-firebaseTest"]
+  }
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
+  func testItemsAreShown() {
+    app.launch()
 
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
+    XCTAssertEqual(app.staticTexts.count, 12, "Wrong number of texts")
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
+    XCTAssertText("title", with: "Black Panther (2018)")
+    XCTAssertText("title", with: "Avengers: Endgame (2019)")
+    XCTAssertText("title", with: "Us (2019)")
+    XCTAssertText("title", with: "Toy Story 4 (2019)")
+    XCTAssertText("title", with: "Lady Bird (2017)")
+    XCTAssertText("title", with: "Mission: Impossible - Fallout (2018)")
+    XCTAssertText("title", with: "The Wizard of Oz (1939)")
+    XCTAssertText("title", with: "The Irishman (2019)")
+    XCTAssertText("title", with: "Citizen Kane (1941)")
+    XCTAssertText("title", with: "BlacKkKlansman (2018)")
+    XCTAssertText("title", with: "The Cabinet of Dr. Caligari (Das Cabinet des Dr. Caligari) (1920)")
+    XCTAssertText("title", with: "Get Out (2017)")
+  }
 }
