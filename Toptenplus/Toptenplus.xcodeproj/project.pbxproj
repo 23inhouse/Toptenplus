@@ -11,11 +11,11 @@
 		9C50DAB197B3E0C15BAA9851 /* Pods_Toptenplus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F010BF0E88E08D4F99AA6DAA /* Pods_Toptenplus.framework */; };
 		B5320D86245724B50086D777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320D85245724B50086D777 /* AppDelegate.swift */; };
 		B5320D88245724B50086D777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320D87245724B50086D777 /* ViewController.swift */; };
-		B5320D8B245724B50086D777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5320D89245724B50086D777 /* Main.storyboard */; };
 		B5320D8D245724B60086D777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5320D8C245724B60086D777 /* Assets.xcassets */; };
 		B5320D90245724B70086D777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5320D8E245724B70086D777 /* LaunchScreen.storyboard */; };
 		B5320D9B245724B70086D777 /* ToptenplusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320D9A245724B70086D777 /* ToptenplusTests.swift */; };
 		B5320DA6245724B70086D777 /* ToptenplusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320DA5245724B70086D777 /* ToptenplusUITests.swift */; };
+		B5320DB724572D9B0086D777 /* AppDelegate+gotoAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320DB624572D9B0086D777 /* AppDelegate+gotoAppVC.swift */; };
 		BDD1B4E2C2A39DFE11FCD5D3 /* Pods_ToptenplusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D60C666AF6C313526A0598E /* Pods_ToptenplusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,6 @@
 		B5320D82245724B50086D777 /* Toptenplus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toptenplus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5320D85245724B50086D777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5320D87245724B50086D777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5320D8A245724B50086D777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5320D8C245724B60086D777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5320D8F245724B70086D777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5320D91245724B70086D777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		B5320DA1245724B70086D777 /* ToptenplusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToptenplusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5320DA5245724B70086D777 /* ToptenplusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToptenplusUITests.swift; sourceTree = "<group>"; };
 		B5320DA7245724B70086D777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5320DB624572D9B0086D777 /* AppDelegate+gotoAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+gotoAppVC.swift"; sourceTree = "<group>"; };
 		BAC7AB1CF380B1E5968175AD /* Pods-ToptenplusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToptenplusTests.release.xcconfig"; path = "Target Support Files/Pods-ToptenplusTests/Pods-ToptenplusTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6431BAF902FB0AA18141280 /* Pods-Toptenplus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toptenplus.debug.xcconfig"; path = "Target Support Files/Pods-Toptenplus/Pods-Toptenplus.debug.xcconfig"; sourceTree = "<group>"; };
 		F010BF0E88E08D4F99AA6DAA /* Pods_Toptenplus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toptenplus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				B5320D87245724B50086D777 /* ViewController.swift */,
+				B5320DB524572D820086D777 /* Extensions */,
 				B5320DB424572C6C0086D777 /* Supporting Files */,
 				B5320D91245724B70086D777 /* Info.plist */,
 			);
@@ -156,11 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				B5320D85245724B50086D777 /* AppDelegate.swift */,
-				B5320D89245724B50086D777 /* Main.storyboard */,
 				B5320D8C245724B60086D777 /* Assets.xcassets */,
 				B5320D8E245724B70086D777 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5320DB524572D820086D777 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5320DB624572D9B0086D777 /* AppDelegate+gotoAppVC.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D2B6669B0DB8B0418E0E7879 /* Frameworks */ = {
@@ -283,7 +291,6 @@
 			files = (
 				B5320D90245724B70086D777 /* LaunchScreen.storyboard in Resources */,
 				B5320D8D245724B60086D777 /* Assets.xcassets in Resources */,
-				B5320D8B245724B50086D777 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +403,7 @@
 			files = (
 				B5320D88245724B50086D777 /* ViewController.swift in Sources */,
 				B5320D86245724B50086D777 /* AppDelegate.swift in Sources */,
+				B5320DB724572D9B0086D777 /* AppDelegate+gotoAppVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,14 +439,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B5320D89245724B50086D777 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5320D8A245724B50086D777 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5320D8E245724B70086D777 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
