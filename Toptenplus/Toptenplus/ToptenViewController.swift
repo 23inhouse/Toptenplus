@@ -56,8 +56,8 @@ class ToptenViewController: UIViewController {
 
 private extension ToptenViewController {
   func loadData() {
-    API.fetchData { rawData in
-      self.toptenResults = rawData.items.map { $0.name }
+    API.fetchData("movies") { rawData in
+      self.toptenResults = MovieDataConverter(movieData: rawData).convert()
     }
   }
   func setupConstraints() {

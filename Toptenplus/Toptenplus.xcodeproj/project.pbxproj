@@ -13,7 +13,7 @@
 		B5320D88245724B50086D777 /* ToptenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320D87245724B50086D777 /* ToptenViewController.swift */; };
 		B5320D8D245724B60086D777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5320D8C245724B60086D777 /* Assets.xcassets */; };
 		B5320D90245724B70086D777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5320D8E245724B70086D777 /* LaunchScreen.storyboard */; };
-		B5320D9B245724B70086D777 /* ToptenplusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320D9A245724B70086D777 /* ToptenplusTests.swift */; };
+		B5320D9B245724B70086D777 /* MovieDataConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320D9A245724B70086D777 /* MovieDataConverterTests.swift */; };
 		B5320DA6245724B70086D777 /* ToptenplusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320DA5245724B70086D777 /* ToptenplusUITests.swift */; };
 		B5320DB724572D9B0086D777 /* AppDelegate+gotoAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5320DB624572D9B0086D777 /* AppDelegate+gotoAppVC.swift */; };
 		B5E6154D245749C1009163F0 /* UITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6154C245749C1009163F0 /* UITestExtensions.swift */; };
@@ -27,6 +27,8 @@
 		B5E6155E24589C29009163F0 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = B5E6155D24589C29009163F0 /* movies.json */; };
 		B5E6156024589CEA009163F0 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6155F24589CEA009163F0 /* MovieData.swift */; };
 		B5E6156224589D3B009163F0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6156124589D3B009163F0 /* API.swift */; };
+		B5E615642458A094009163F0 /* MovieDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E615632458A094009163F0 /* MovieDataConverter.swift */; };
+		B5E615742458A852009163F0 /* test-movies.json in Resources */ = {isa = PBXBuildFile; fileRef = B5E615732458A852009163F0 /* test-movies.json */; };
 		BDD1B4E2C2A39DFE11FCD5D3 /* Pods_ToptenplusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D60C666AF6C313526A0598E /* Pods_ToptenplusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +63,7 @@
 		B5320D8F245724B70086D777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5320D91245724B70086D777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5320D96245724B70086D777 /* ToptenplusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToptenplusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5320D9A245724B70086D777 /* ToptenplusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToptenplusTests.swift; sourceTree = "<group>"; };
+		B5320D9A245724B70086D777 /* MovieDataConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataConverterTests.swift; sourceTree = "<group>"; };
 		B5320D9C245724B70086D777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5320DA1245724B70086D777 /* ToptenplusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToptenplusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5320DA5245724B70086D777 /* ToptenplusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToptenplusUITests.swift; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		B5E6155D24589C29009163F0 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		B5E6155F24589CEA009163F0 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		B5E6156124589D3B009163F0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B5E615632458A094009163F0 /* MovieDataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataConverter.swift; sourceTree = "<group>"; };
+		B5E615732458A852009163F0 /* test-movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-movies.json"; sourceTree = "<group>"; };
 		BAC7AB1CF380B1E5968175AD /* Pods-ToptenplusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToptenplusTests.release.xcconfig"; path = "Target Support Files/Pods-ToptenplusTests/Pods-ToptenplusTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6431BAF902FB0AA18141280 /* Pods-Toptenplus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toptenplus.debug.xcconfig"; path = "Target Support Files/Pods-Toptenplus/Pods-Toptenplus.debug.xcconfig"; sourceTree = "<group>"; };
 		F010BF0E88E08D4F99AA6DAA /* Pods_Toptenplus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toptenplus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +171,8 @@
 		B5320D99245724B70086D777 /* ToptenplusTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5320D9A245724B70086D777 /* ToptenplusTests.swift */,
+				B5320D9A245724B70086D777 /* MovieDataConverterTests.swift */,
+				B5E615732458A852009163F0 /* test-movies.json */,
 				B5320D9C245724B70086D777 /* Info.plist */,
 			);
 			path = ToptenplusTests;
@@ -207,6 +212,7 @@
 			children = (
 				B5E6156124589D3B009163F0 /* API.swift */,
 				B5E6155F24589CEA009163F0 /* MovieData.swift */,
+				B5E615632458A094009163F0 /* MovieDataConverter.swift */,
 				B5E6155D24589C29009163F0 /* movies.json */,
 			);
 			path = API;
@@ -330,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E615742458A852009163F0 /* test-movies.json in Resources */,
 				B5E6155E24589C29009163F0 /* movies.json in Resources */,
 				B5320D90245724B70086D777 /* LaunchScreen.storyboard in Resources */,
 				B5320D8D245724B60086D777 /* Assets.xcassets in Resources */,
@@ -454,6 +461,7 @@
 				B5E6154F24574A0E009163F0 /* ToptenItemsView.swift in Sources */,
 				B5E615592458895A009163F0 /* ToptenViewController+UITableViewDragDelegate.swift in Sources */,
 				B5E6156224589D3B009163F0 /* API.swift in Sources */,
+				B5E615642458A094009163F0 /* MovieDataConverter.swift in Sources */,
 				B5E6155124574A40009163F0 /* ToptenItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,7 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5320D9B245724B70086D777 /* ToptenplusTests.swift in Sources */,
+				B5320D9B245724B70086D777 /* MovieDataConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

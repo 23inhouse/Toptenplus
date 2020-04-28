@@ -9,9 +9,9 @@
 import Foundation
 
 struct API {
-  static func fetchData(completion: @escaping (MovieRawData) -> Void) {
-    guard let jsonPath = Bundle.main.path(forResource: "movies", ofType: "json") else {
-      print("ERROR: could find json file")
+  static func fetchData(_ resourceName: String, completion: @escaping (MovieRawData) -> Void) {
+    guard let jsonPath = Bundle.main.path(forResource: resourceName, ofType: "json") else {
+      print("ERROR: could find json file: [\(resourceName)]")
       return
     }
 

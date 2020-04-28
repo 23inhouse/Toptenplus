@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "rank": 2,
+      "name": "Second movie (2020)"
+    },
+    {
+      "rank": 1,
+      "name": "First movie (2020)"
+    },
+    {
+      "rank": 3,
+      "name": "Last movie (2020)"
+    }
+  ]
+}
