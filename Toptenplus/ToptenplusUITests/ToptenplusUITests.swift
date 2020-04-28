@@ -19,7 +19,7 @@ class ToptenplusUITests: XCTestCase {
   func testItemsAreShown() {
     app.launch()
 
-    XCTAssertEqual(app.staticTexts.count, 12, "Wrong number of texts")
+    XCTAssertEqual(app.staticTexts.count, 13, "Wrong number of texts")
 
     XCTAssertText("title", with: "1. Black Panther (2018)")
     XCTAssertText("title", with: "2. Avengers: Endgame (2019)")
@@ -45,5 +45,15 @@ class ToptenplusUITests: XCTestCase {
 
     XCTAssertText("title", with: "3. Toy Story 4 (2019)")
     XCTAssertText("title", with: "4. Us (2019)")
+  }
+
+  func testRandomizingItems() {
+    app.launch()
+
+    let button = XCTAssertText("button", with: "RANDOM RATING")
+    button.tap()
+
+    let firstItem = app.staticTexts["1. Black Panther (2018)"].firstMatch
+    XCTAssert(!firstItem.exists, "Black Panther should not be number 1")
   }
 }
