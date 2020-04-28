@@ -9,20 +9,7 @@
 import UIKit
 
 class ToptenViewController: UIViewController {
-  var toptenResults = [
-    "Black Panther (2018)",
-    "Avengers: Endgame (2019)",
-    "Us (2019)",
-    "Toy Story 4 (2019)",
-    "Lady Bird (2017)",
-    "Mission: Impossible - Fallout (2018)",
-    "The Wizard of Oz (1939)",
-    "The Irishman (2019)",
-    "Citizen Kane (1941)",
-    "BlacKkKlansman (2018)",
-    "The Cabinet of Dr. Caligari (Das Cabinet des Dr. Caligari) (1920)",
-    "Get Out (2017)",
-    ] {
+  var toptenResults = [String]() {
     didSet {
       toptenItemsView.reloadData()
     }
@@ -60,9 +47,19 @@ class ToptenViewController: UIViewController {
     setupViews()
     setupConstraints()
   }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    loadData()
+  }
 }
 
 private extension ToptenViewController {
+  func loadData() {
+    API.fetchData { rawData in
+      self.toptenResults = rawData.items.map { $0.name }
+    }
+  }
   func setupConstraints() {
     toptenItemsView.constrain(to: view.safeAreaLayoutGuide)
     randomizeButton.constrain(to: headerView, margin: 10)
