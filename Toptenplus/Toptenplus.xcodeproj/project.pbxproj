@@ -22,6 +22,8 @@
 		B5E6155324574AD8009163F0 /* UIView+constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6155224574AD8009163F0 /* UIView+constraints.swift */; };
 		B5E6155524574D5C009163F0 /* ToptenViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6155424574D5C009163F0 /* ToptenViewController+UITableViewDelegate.swift */; };
 		B5E6155724574D70009163F0 /* ToptenViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6155624574D70009163F0 /* ToptenViewController+UITableViewDataSource.swift */; };
+		B5E615592458895A009163F0 /* ToptenViewController+UITableViewDragDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E615582458895A009163F0 /* ToptenViewController+UITableViewDragDelegate.swift */; };
+		B5E6155B24588992009163F0 /* ToptenViewController+UITableViewDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6155A24588992009163F0 /* ToptenViewController+UITableViewDropDelegate.swift */; };
 		BDD1B4E2C2A39DFE11FCD5D3 /* Pods_ToptenplusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D60C666AF6C313526A0598E /* Pods_ToptenplusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		B5E6155224574AD8009163F0 /* UIView+constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+constraints.swift"; sourceTree = "<group>"; };
 		B5E6155424574D5C009163F0 /* ToptenViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToptenViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		B5E6155624574D70009163F0 /* ToptenViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToptenViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		B5E615582458895A009163F0 /* ToptenViewController+UITableViewDragDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToptenViewController+UITableViewDragDelegate.swift"; sourceTree = "<group>"; };
+		B5E6155A24588992009163F0 /* ToptenViewController+UITableViewDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToptenViewController+UITableViewDropDelegate.swift"; sourceTree = "<group>"; };
 		BAC7AB1CF380B1E5968175AD /* Pods-ToptenplusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToptenplusTests.release.xcconfig"; path = "Target Support Files/Pods-ToptenplusTests/Pods-ToptenplusTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6431BAF902FB0AA18141280 /* Pods-Toptenplus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toptenplus.debug.xcconfig"; path = "Target Support Files/Pods-Toptenplus/Pods-Toptenplus.debug.xcconfig"; sourceTree = "<group>"; };
 		F010BF0E88E08D4F99AA6DAA /* Pods_Toptenplus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toptenplus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +146,8 @@
 				B5320D87245724B50086D777 /* ToptenViewController.swift */,
 				B5E6155624574D70009163F0 /* ToptenViewController+UITableViewDataSource.swift */,
 				B5E6155424574D5C009163F0 /* ToptenViewController+UITableViewDelegate.swift */,
+				B5E615582458895A009163F0 /* ToptenViewController+UITableViewDragDelegate.swift */,
+				B5E6155A24588992009163F0 /* ToptenViewController+UITableViewDropDelegate.swift */,
 				B5E6154E24574A0E009163F0 /* ToptenItemsView.swift */,
 				B5E6155024574A40009163F0 /* ToptenItemViewCell.swift */,
 				B5320DB524572D820086D777 /* Extensions */,
@@ -425,7 +431,9 @@
 				B5E6155724574D70009163F0 /* ToptenViewController+UITableViewDataSource.swift in Sources */,
 				B5320D86245724B50086D777 /* AppDelegate.swift in Sources */,
 				B5320DB724572D9B0086D777 /* AppDelegate+gotoAppVC.swift in Sources */,
+				B5E6155B24588992009163F0 /* ToptenViewController+UITableViewDropDelegate.swift in Sources */,
 				B5E6154F24574A0E009163F0 /* ToptenItemsView.swift in Sources */,
+				B5E615592458895A009163F0 /* ToptenViewController+UITableViewDragDelegate.swift in Sources */,
 				B5E6155124574A40009163F0 /* ToptenItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

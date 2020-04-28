@@ -9,6 +9,11 @@
 import UIKit
 
 extension ToptenViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+    let item = toptenResults.remove(at: sourceIndexPath.row)
+    toptenResults.insert(item, at: destinationIndexPath.row)
+  }
+
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return toptenResults.count
   }

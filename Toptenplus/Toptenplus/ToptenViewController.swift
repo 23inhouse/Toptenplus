@@ -9,7 +9,7 @@
 import UIKit
 
 class ToptenViewController: UIViewController {
-  let toptenResults = [
+  var toptenResults = [
     "Black Panther (2018)",
     "Avengers: Endgame (2019)",
     "Us (2019)",
@@ -22,7 +22,11 @@ class ToptenViewController: UIViewController {
     "BlacKkKlansman (2018)",
     "The Cabinet of Dr. Caligari (Das Cabinet des Dr. Caligari) (1920)",
     "Get Out (2017)",
-  ]
+    ] {
+    didSet {
+      toptenItemsView.reloadData()
+    }
+  }
 
   let reuseIdentifier = "toptencell"
 
@@ -47,5 +51,8 @@ private extension ToptenViewController {
 
     toptenItemsView.dataSource = self
     toptenItemsView.delegate = self
+    toptenItemsView.dragInteractionEnabled = true
+    toptenItemsView.dragDelegate = self
+    toptenItemsView.dropDelegate = self
   }
 }

@@ -14,7 +14,8 @@ extension ToptenViewController: UITableViewDelegate {
 
     let topTenItem = toptenResults[indexPath.row]
 
-    cell.titleText = topTenItem
+    let rank = indexPath.row + 1
+    cell.titleText = "\(rank). \(topTenItem)"
 
     return cell
   }
